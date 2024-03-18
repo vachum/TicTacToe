@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2 class="winner"></h2>
+      <form id="form" action="">
+        <div class="column">
+          <div><label for=""> Velikost </label></div>
+
+          <input type="number" class="width" />
+        </div>
+
+        <!-- Player one---------------------------------->
+        <div class="row">
+          <div class="column">
+            <label for=""> Hráč 1 </label>
+            <input type="text" name="playerOne" id="pOne" />
+
+            <select name="playerOneVal" id="valOne">
+              <option value="X">X</option>
+
+              <option value="O">O</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Player two---------------------------------->
+        <div class="row">
+          <div class="column">
+            <label for=""> Hráč 2</label>
+            <input type="text" name="playerTwo" id="pTwo" />
+
+            <select name="playerTwoVal" id="valTwo">
+              <option value="X">X</option>
+
+              <option value="O">O</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="try">Generate</button>
+      </form>
+
+      <div class="cnv">
+        <canvas width="0" height="0" style="border: 1px solid #000" id="canv">
+        </canvas>
+      </div>
+    </div>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
